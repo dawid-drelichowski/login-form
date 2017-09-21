@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "extends": [
+    "standard",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "no-new": "off",
+    "object-curly-spacing": ["error", "never"],
+    "one-var": ["error", "always"]
+  }
+}

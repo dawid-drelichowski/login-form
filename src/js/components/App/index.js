@@ -3,7 +3,7 @@ import './style.css'
 
 export default class App extends Component {
   render () {
-    return <form method="POST">
+    return <form method="post">
       <fieldset>
         <label htmlFor="email">email</label>
         <input type="email" name="email" id="email" required={true}/>

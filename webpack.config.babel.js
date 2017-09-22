@@ -13,7 +13,12 @@ export default {
     filename: 'js/bundle.js'
   },
   resolve: {
-    modules: [__dirname, path.join(__dirname, 'src/js'), 'node_modules']
+    modules: [
+      __dirname,
+      path.join(__dirname, 'src/js'),
+      path.join(__dirname, 'src/css'),
+      'node_modules'
+    ]
   },
   module: {
     rules: [

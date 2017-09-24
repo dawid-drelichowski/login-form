@@ -8,5 +8,6 @@
 [lints]
 
 [options]
+emoji=true
 module.name_mapper='^\(components\|types\)\/\(.*\)$' -> '<PROJECT_ROOT>/src/js/\1/\2'
 module.name_mapper='^config.json$' -> '<PROJECT_ROOT>/config.json'

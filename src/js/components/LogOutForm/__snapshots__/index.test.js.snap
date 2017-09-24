@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Log out form component should render 1`] = `
+<form
+  method="post"
+  onSubmit={[Function]}
+>
+  <fieldset>
+    <div>
+      You are logged in!
+    </div>
+    <input
+      type="submit"
+      value="Logout"
+    />
+  </fieldset>
+</form>
+`;

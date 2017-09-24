@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validation aware input component should render with additional input attributes 1`] = `
+<div>
+  <label
+    htmlFor="name"
+  >
+    Your name
+  </label>
+  <input
+    checked={false}
+    id="name"
+    onChange={[Function]}
+    onInvalid={[Function]}
+    placeholder="Your name"
+    required={true}
+    type="text"
+    value=""
+  />
+  
+</div>
+`;
+
+exports[`Validation aware input component should render without additional input attributes 1`] = `
+<div>
+  <label
+    htmlFor="name"
+  >
+    Your name
+  </label>
+  <input
+    checked={false}
+    id="name"
+    onChange={[Function]}
+    onInvalid={[Function]}
+    type="text"
+    value=""
+  />
+  
+</div>
+`;

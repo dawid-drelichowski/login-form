@@ -1,7 +1,8 @@
 // @flow
-import * as React from 'react'
+import React, {Component} from 'react'
+import type {Node} from 'react'
 
-export default class ValidationAwareInput extends React.Component<
+export default class ValidationAwareInput extends Component<
   {type: string, id: string, label: string, onChange?: (id: string, value: string) => void},
   {value: string, checked: boolean, invalidMessage: string}
 > {
@@ -18,7 +19,7 @@ export default class ValidationAwareInput extends React.Component<
     this.setState({invalidMessage: `Invalid ${this.props.label.toLowerCase()}`})
     event.preventDefault()
   }
-  render (): React.Node {
+  render (): Node {
     const {type, id, label, onChange, ...props} = this.props,
       invalidMessage: string = this.state.invalidMessage
 

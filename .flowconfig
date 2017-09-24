@@ -1,4 +1,5 @@
 [ignore]
+.*/node_modules/bcryptjs/src/bower.json
 
 [include]
 
@@ -7,4 +8,5 @@
 [lints]
 
 [options]
-module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/src/js/components/\1'
+module.name_mapper='^\(components\|types\)\/\(.*\)$' -> '<PROJECT_ROOT>/src/js/\1/\2'
+module.name_mapper='^config.json$' -> '<PROJECT_ROOT>/config.json'

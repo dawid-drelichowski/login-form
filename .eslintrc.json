@@ -1,10 +1,7 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["react"],
-  "extends": [
-    "standard",
-    "plugin:react/recommended"
-  ],
+  "plugins": ["react", "flowtype"],
+  "extends": ["standard", "plugin:react/recommended", "plugin:flowtype/recommended"],
   "env": {
     "browser": true,
     "jest": true
@@ -12,6 +9,7 @@
   "rules": {
     "no-new": "off",
     "object-curly-spacing": ["error", "never"],
-    "one-var": ["error", "always"]
+    "one-var": ["error", "always"],
+    "react/prop-types": "off"
   }
 }

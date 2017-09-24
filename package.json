@@ -2,7 +2,7 @@
   "name": "login-form",
   "title": "login-form",
   "description": "Login form based on React",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Dawid Drelichowski"
   },
@@ -21,9 +21,11 @@
     "watch": "webpack --watch --progress --hide-modules",
     "test": "jest",
     "lint": "eslint src/js/. *.js",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "bcrypt": "node node_modules/bcryptjs/bin/bcrypt"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
@@ -41,6 +43,7 @@
     "enzyme": "^2.9.1",
     "eslint": "^4.6.1",
     "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-flowtype": "^2.35.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",

@@ -1,11 +1,13 @@
-import React, {Component} from 'react'
+// @flow
+import * as React from 'react'
 
-export default class LogOutForm extends Component {
-  onLogOut = event => {
+export default class LogOutForm extends React.Component<{onLogOut?: () => void}> {
+  onLogOut = (event: SyntheticEvent<HTMLButtonElement>): void => {
+    const onLogOut: () => void = this.props.onLogOut ? this.props.onLogOut : () => {}
     event.preventDefault()
-    this.props.onLogOut()
+    onLogOut()
   }
-  render () {
+  render (): React.Node {
     return <form method="post" onSubmit={this.onLogOut}>
       <fieldset>
         <div>You are logged in!</div>

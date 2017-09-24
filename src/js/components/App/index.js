@@ -1,17 +1,18 @@
-import React, {Component} from 'react'
+// @flow
+import * as React from 'react'
 import LogInForm from 'components/LogInForm'
 import LogOutForm from 'components/LogOutForm'
 import './style.css'
 
-export default class App extends Component {
+export default class App extends React.Component<{}, {loggedIn: boolean}> {
   state = {loggedIn: false}
-  onLogIn = () => {
+  onLogIn = (): void => {
     this.setState({loggedIn: true})
   }
-  onLogOut = () => {
+  onLogOut = (): void => {
     this.setState({loggedIn: false})
   }
-  render () {
+  render (): React.Node {
     return this.state.loggedIn ? <LogOutForm onLogOut={this.onLogOut}/> : <LogInForm onLogIn={this.onLogIn}/>
   }
 }

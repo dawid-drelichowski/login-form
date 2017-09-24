@@ -1,22 +1,26 @@
-import React, {Component} from 'react'
+// @flow
+import * as React from 'react'
 import ValidationAwareInput from 'components/ValidationAwareInput'
 
-export default class LogInForm extends Component {
+export default class LogInForm extends React.Component<
+  {onLogIn?: () => void}, {email: string, password: string, showInvalid: boolean}
+> {
   state = {email: '', password: '', showInvalid: false}
-  onInputChange = (id, value) => {
+  onInputChange = (id: string, value: string) => {
     this.setState({[id]: value})
   }
-  onSubmit = event => {
-    let state = {showInvalid: true}
+  onSubmit = (event: SyntheticEvent<HTMLFormElement>): void => {
+    const onLogIn: () => void = this.props.onLogIn ? this.props.onLogIn : () => {}
+    let showInvalid: boolean = true
     event.preventDefault()
 
     if (this.state.email === 'test@test.pl' && this.state.password === 'Password1.') { // @todo: login and password should be as hash
-      state = {loggedIn: true, showInvalid: false}
-      this.props.onLogIn()
+      showInvalid = false
+      onLogIn()
     }
-    this.setState(state)
+    this.setState({showInvalid})
   }
-  render () {
+  render (): React.Node {
     return <form method="post" onSubmit={this.onSubmit}>
       <fieldset>
         <ValidationAwareInput type="email" label="E-mail" id="email" name="email" required={true} placeholder="E-mail"

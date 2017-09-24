@@ -1,4 +1,4 @@
 {
-  "presets": [["env", {"targets": {"browsers": ["last 2 versions", "ie >= 10"]}}], "react"],
+  "presets": [["env", {"targets": {"browsers": ["last 2 versions", "ie >= 10"]}}], "react", "flow"],
   "plugins": ["transform-class-properties", "transform-object-rest-spread"]
 }

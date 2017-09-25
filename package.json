@@ -22,7 +22,8 @@
     "test": "jest",
     "lint": "eslint src/js/. *.js",
     "start": "webpack-dev-server --open",
-    "bcrypt": "node node_modules/bcryptjs/bin/bcrypt"
+    "bcrypt": "node node_modules/bcryptjs/bin/bcrypt",
+    "flow": "flow"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

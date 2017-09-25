@@ -26,8 +26,9 @@ export default class ValidationAwareInput extends Component<
 
     return <div className="validation-aware-input">
       <label htmlFor={id}>{label}</label>
-      <input type={type} id={id} value={this.state.value} checked={this.state.checked} className="input" {...props}
-        onChange={this.onChange} onInvalid={this.onInvalid}/>
+      <input type={type} id={id} value={this.state.value} checked={this.state.checked}
+        className={type === 'checkbox' ? 'checkbox' : 'input'} {...props} onChange={this.onChange}
+        onInvalid={this.onInvalid}/>
       {invalidMessage ? <div className="invalid">{invalidMessage}</div> : ''}
     </div>
   }

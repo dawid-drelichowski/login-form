@@ -10,6 +10,12 @@
   margin: 5px 0;
 }
 
+.validation-aware-input .checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+
 .validation-aware-input .invalid {
   color: #c54639;
   font-weight: bold;

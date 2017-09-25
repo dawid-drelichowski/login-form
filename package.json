@@ -64,6 +64,9 @@
     "moduleDirectories": [
       "node_modules",
       "src/js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/src/js/mocks/style.js"
+    }
   }
 }

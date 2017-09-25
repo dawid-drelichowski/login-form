@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Log in form component should render 1`] = `
+<form
+  method="post"
+  onSubmit={[Function]}
+>
+  <fieldset>
+    <div>
+      <label
+        htmlFor="email"
+      >
+        E-mail
+      </label>
+      <input
+        autoComplete="off"
+        checked={false}
+        id="email"
+        name="email"
+        onChange={[Function]}
+        onInvalid={[Function]}
+        placeholder="E-mail"
+        required={true}
+        type="email"
+        value=""
+      />
+      
+    </div>
+    <div>
+      <label
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        checked={false}
+        id="password"
+        name="password"
+        onChange={[Function]}
+        onInvalid={[Function]}
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\\\\d).{6,}"
+        placeholder="Password"
+        required={true}
+        type="password"
+        value=""
+      />
+      
+    </div>
+    <div>
+      <label
+        htmlFor="remember"
+      >
+        Remember me
+      </label>
+      <input
+        checked={false}
+        id="remember"
+        name="remember"
+        onChange={[Function]}
+        onInvalid={[Function]}
+        type="checkbox"
+        value=""
+      />
+      
+    </div>
+    
+    <input
+      type="submit"
+      value="Login"
+    />
+  </fieldset>
+</form>
+`;

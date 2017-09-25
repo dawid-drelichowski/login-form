@@ -10,7 +10,8 @@ Login form based on [React](https://facebook.github.io/react/)
 
 Depending on preferred package manager execute `yarn install` or `npm install` command.  
 Copy `config.json.dist` to `config.json` file.  
-If preferred, change login or password in `config.json` file. To generate password hash use `npm run bcrypt <new password>` or `npm run bcrypt <new password>`  
+If preferred, change email or password in `config.json` file. To generate password hash use `npm run bcrypt <new password>` or `npm run bcrypt <new password>`.  
+Default email: `test@test.pl`, default password: `Password1.`.  
 There is no build assets version attached with this repository. To build them run `npm run build` or `yarn run build`.  
 
 ## Usage

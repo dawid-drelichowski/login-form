@@ -45,6 +45,6 @@ describe('Validation aware input component', () => {
     const validationAwareInput = getShallowComponent('text', 'name', 'Your name', () => {}, {required: true})
 
     validationAwareInput.find('input[type="text"]').simulate('invalid', {preventDefault: jest.fn()})
-    expect(validationAwareInput.contains(<div>Invalid your name</div>)).toBeTruthy()
+    expect(validationAwareInput.contains(<div className="invalid">Invalid your name</div>)).toBeTruthy()
   })
 })

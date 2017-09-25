@@ -1,0 +1,28 @@
+.log-out-form {
+  background: #fff;
+  max-width: 300px;
+  padding: 30px;
+  margin: 10% auto 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.log-out-form .field-set {
+  border: 0;
+  text-align: center;
+}
+
+.log-out-form .field-set .text {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.log-out-form .field-set .button {
+  text-transform: uppercase;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}

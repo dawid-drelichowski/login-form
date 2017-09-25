@@ -2,14 +2,20 @@
 
 exports[`Log out form component should render 1`] = `
 <form
+  className="log-out-form"
   method="post"
   onSubmit={[Function]}
 >
-  <fieldset>
-    <div>
+  <fieldset
+    className="field-set"
+  >
+    <div
+      className="text"
+    >
       You are logged in!
     </div>
     <input
+      className="button"
       type="submit"
       value="Logout"
     />

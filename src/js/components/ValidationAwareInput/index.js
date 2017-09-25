@@ -1,6 +1,7 @@
 // @flow
 import React, {Component} from 'react'
 import type {Node} from 'react'
+import './style.css'
 
 export default class ValidationAwareInput extends Component<
   {type: string, id: string, label: string, onChange?: (id: string, value: string) => void},
@@ -23,11 +24,11 @@ export default class ValidationAwareInput extends Component<
     const {type, id, label, onChange, ...props} = this.props,
       invalidMessage: string = this.state.invalidMessage
 
-    return <div>
+    return <div className="validation-aware-input">
       <label htmlFor={id}>{label}</label>
-      <input type={type} id={id} value={this.state.value} checked={this.state.checked} {...props}
+      <input type={type} id={id} value={this.state.value} checked={this.state.checked} className="input" {...props}
         onChange={this.onChange} onInvalid={this.onInvalid}/>
-      {invalidMessage ? <div>{invalidMessage}</div> : ''}
+      {invalidMessage ? <div className="invalid">{invalidMessage}</div> : ''}
     </div>
   }
 }

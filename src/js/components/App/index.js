@@ -4,7 +4,6 @@ import type {Node} from 'react'
 import type {Config} from 'types/Config'
 import LogInForm from 'components/LogInForm'
 import LogOutForm from 'components/LogOutForm'
-import './style.css'
 
 export default class App extends Component<{config: Config}, {loggedIn: boolean}> {
   state = {loggedIn: false}

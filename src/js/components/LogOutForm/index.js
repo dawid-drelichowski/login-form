@@ -1,6 +1,7 @@
 // @flow
 import React, {Component} from 'react'
 import type {Node} from 'react'
+import './style.css'
 
 export default class LogOutForm extends Component<{onLogOut?: () => void}> {
   onSubmit = (event: SyntheticEvent<HTMLInputElement>): void => {
@@ -9,10 +10,10 @@ export default class LogOutForm extends Component<{onLogOut?: () => void}> {
     onLogOut()
   }
   render (): Node {
-    return <form method="post" onSubmit={this.onSubmit}>
-      <fieldset>
-        <div>You are logged in!</div>
-        <input type="submit" value="Logout"/>
+    return <form method="post" onSubmit={this.onSubmit} className="log-out-form">
+      <fieldset className="field-set">
+        <div className="text">You are logged in!</div>
+        <input type="submit" value="Logout" className="button"/>
       </fieldset>
     </form>
   }

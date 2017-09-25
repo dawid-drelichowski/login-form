@@ -2,19 +2,24 @@
 
 exports[`Log in form component should render 1`] = `
 <form
+  className="log-in-form"
   method="post"
   onSubmit={[Function]}
 >
-  <fieldset>
-    <div>
+  <fieldset
+    className="field-set"
+  >
+    <div
+      className="validation-aware-input"
+    >
       <label
         htmlFor="email"
       >
         E-mail
       </label>
       <input
-        autoComplete="off"
         checked={false}
+        className="input"
         id="email"
         name="email"
         onChange={[Function]}
@@ -26,7 +31,9 @@ exports[`Log in form component should render 1`] = `
       />
       
     </div>
-    <div>
+    <div
+      className="validation-aware-input"
+    >
       <label
         htmlFor="password"
       >
@@ -34,6 +41,7 @@ exports[`Log in form component should render 1`] = `
       </label>
       <input
         checked={false}
+        className="input"
         id="password"
         name="password"
         onChange={[Function]}
@@ -46,7 +54,9 @@ exports[`Log in form component should render 1`] = `
       />
       
     </div>
-    <div>
+    <div
+      className="validation-aware-input"
+    >
       <label
         htmlFor="remember"
       >
@@ -54,6 +64,7 @@ exports[`Log in form component should render 1`] = `
       </label>
       <input
         checked={false}
+        className="input"
         id="remember"
         name="remember"
         onChange={[Function]}
@@ -65,6 +76,7 @@ exports[`Log in form component should render 1`] = `
     </div>
     
     <input
+      className="button"
       type="submit"
       value="Login"
     />

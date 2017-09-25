@@ -34,6 +34,6 @@ describe('Log in form component', () => {
     instance.onInputChange('email', 'wrong@wrong.pl')
     instance.onInputChange('password', 'Wrong1')
     form.simulate('submit', {preventDefault: jest.fn()})
-    expect(form.contains(<div>Invalid email or password</div>)).toBeTruthy()
+    expect(form.contains(<div className="invalid">Invalid email or password</div>)).toBeTruthy()
   })
 })

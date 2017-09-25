@@ -10,7 +10,7 @@ Login form based on [React](https://facebook.github.io/react/)
 
 Depending on preferred package manager execute `yarn install` or `npm install` command.  
 Copy `config.json.dist` to `config.json` file.  
-If preferred change login or password in `config.json` file. To generate password hash use `npm run bcrypt <new password>` or `npm run bcrypt <new password>`  
+If preferred, change login or password in `config.json` file. To generate password hash use `npm run bcrypt <new password>` or `npm run bcrypt <new password>`  
 There is no build assets version attached with this repository. To build them run `npm run build` or `yarn run build`.  
 
 ## Usage
@@ -29,7 +29,7 @@ To rebuild assets every time they change execute `npm run build:dev` or `yarn ru
 There is a better way: `npm run watch` or `yarn run watch` command will continue running in terminal and watch all relevant files for changes.  
 [Webpack](https://webpack.js.org/) will then automatically recompile assets when it detects a change.  
 It's possible to use [Webpack DevServer](https://webpack.js.org/configuration/dev-server/). To start it use `npm run start` or `yarn run start`  
-To specify a port number to listen for requests on, modify [webpack.config.babel.js](dawid-drelichowski/login-form/blob/master/webpack.config.babel.js)  
+To specify a port number to listen for requests on, modify [webpack.config.babel.js](/dawid-drelichowski/login-form/blob/master/webpack.config.babel.js)  
 Default server port is *3000*.  
 Minified (so called "production") version of assets can be build with `npm run build` or `yarn run build`.
 

@@ -16,7 +16,7 @@ There is no build assets version attached with this repository. To build them ru
 
 ## Usage
 
-Run **index.html** in favorite browser. Consider **only last two versions of major browsers and IE10+** are supported.
+Run **public/index.html** in favorite browser. Consider **only last two versions of major browsers and IE10+** are supported.
 
 ## Tests
 

@@ -1,4 +1,4 @@
-# Login form [![Build Status](https://travis-ci.org/dawid-drelichowski/login-form.svg?branch=master)](https://travis-ci.org/dawid-drelichowski/login-form) [![bitHound Overall Score](https://www.bithound.io/github/dawid-drelichowski/login-form/badges/score.svg)](https://www.bithound.io/github/dawid-drelichowski/login-form) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+# Login form [![Build Status](https://travis-ci.org/dawid-drelichowski/login-form.svg?branch=master)](https://travis-ci.org/dawid-drelichowski/login-form) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [log-in-form.co.nf](http://log-in-form.co.nf/) - login form based on [React](https://facebook.github.io/react/)
 
 ## Requirements
